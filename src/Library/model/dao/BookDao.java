@@ -13,4 +13,19 @@ public class BookDao {
     }
     // 2) 여러개 게시물(DTO)들을 저장할 리스트 선언
     private ArrayList<BookDto> bookDB = new ArrayList<>();
-}
+
+    // 3) 도서등록 bookRegis()
+    public boolean bookRegis( int bCode , String bName, String bAuthor ) {
+        boolean result = false;
+        // 1) 매개변수 값들을 객체화히기
+        BookDto bookDto = new BookDto( bCode , bName , bAuthor );
+        // 2) DB에 생성한 객체 대입하기
+        bookDB.add( bookDto );
+        // 3) 성공시 result 에 성공의 의미 'true' 대입
+        result = true;
+        return result;
+    } // func e
+
+    // 4) 도서대출 bookLoan()
+
+}//class e
