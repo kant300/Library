@@ -28,14 +28,16 @@ public class MemberView {
             System.out.println("  1.회원가입 | 2.로그인");
             System.out.println("==========================================");
             System.out.println("선택 > ");
-            //int choose = scan.nextInt();
-            //if( choose == 1 ) { signup(); }
-            //else if( choose == 2 ) { login(); }
+            int choose = scan.nextInt();
+            if( choose == 1 ) { signup(); }
+            else if( choose == 2 ) { login(); }
         }//for e
     }// func e
 
+    // 회원가입과 로그인 구현
+    // 1. 안내와 입력받기
 
-    // 4) 도서 대출
+
 
 
 }

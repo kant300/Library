@@ -1,7 +1,6 @@
 package Library.model.dao;
 
 import Library.model.dto.BookDto;
-
 import java.util.ArrayList;
 
 public class BookDao {
@@ -15,8 +14,9 @@ public class BookDao {
     private ArrayList<BookDto> bookDB = new ArrayList<>();
 
     // 3) 도서등록 bookRegis()
-    public boolean bookRegis( int bCode , String bName, String bAuthor ) {
+    public boolean bookRegis( String bName, String bAuthor ) {
         boolean result = false;
+        int bCode = bookDB.size()+1;
         // 1) 매개변수 값들을 객체화히기
         BookDto bookDto = new BookDto( bCode , bName , bAuthor );
         // 2) DB에 생성한 객체 대입하기
@@ -26,6 +26,6 @@ public class BookDao {
         return result;
     } // func e
 
-    // 4) 도서대출 bookLoan()
+
 
 }//class e

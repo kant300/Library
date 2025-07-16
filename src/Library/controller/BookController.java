@@ -13,15 +13,15 @@ public class BookController {
     private BookDao bookDao = BookDao.getInstance();
 
     // 3) 도서등록 bookRegis()
-    public boolean bookRegis( int bCode , String bName, String bAuthor ) {
+    public boolean bookRegis( String bName, String bAuthor ) {
         boolean result = false;
         // 1) dao에게 매개변수를 전달하고 결과값을 받는다.
-        result = bookDao.bookRegis( bCode , bName, bAuthor );
+        result = bookDao.bookRegis( bName, bAuthor );
         return result;
     }
 
 
-    // 4) 도서대출 bookLoan()
+
 
 
 }
