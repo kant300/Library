@@ -41,7 +41,7 @@ public class LoanView {
         // 3. 결과/리턴 따른 출력문
         if ( result ) {
             if (result) {
-                System.out.printf("[안내]%s \n" + "도서 대출이 완료되었습니다. " , bName);
+               // System.out.printf("[안내]%s \n" + "도서 대출이 완료되었습니다. " , bName);
             } else {
                 System.out.println("[경고] 도서 대출을 할수 없습니다. ");
             }

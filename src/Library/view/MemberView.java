@@ -29,8 +29,8 @@ public class MemberView {
             System.out.println("==========================================");
             System.out.println("선택 > ");
             int choose = scan.nextInt();
-            if( choose == 1 ) { signup(); }
-            else if( choose == 2 ) { login(); }
+            //if( choose == 1 ) { signup(); }
+            //else if( choose == 2 ) { login(); }
         }//for e
     }// func e
 
